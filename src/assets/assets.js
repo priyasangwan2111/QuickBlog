@@ -246,11 +246,11 @@ export const dashboard_data = {
 export const footer_data = [
       {
           title: "Quick Links",
-          links: ["Home", "Best Sellers", "Offers & Deals", "Contact Us", "FAQs"]
+          links: ["Home", "About Us", "Categories", "popular Blogs", "contact"]
       },
       {
           title: "Need Help?",
-          links: ["Delivery Information", "Return & Refund Policy", "Payment Methods", "Track your Order", "Contact Us"]
+          links: ["FAQs", "Privacy Policy", "Terms & Conditions", "Help Center"]
       },
       {
           title: "Follow Us",
