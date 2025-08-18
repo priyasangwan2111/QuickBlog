@@ -6,6 +6,7 @@ import { assets } from '../assets/assets'
 import Moment from 'moment'
 import Footer from '../components/Footer'
 import { comments_data } from '../assets/assets'
+import Loader from '../components/Loader'
 const Blog = () => {
   const {id}=useParams()
   const [data,setData]=useState(null)
@@ -91,7 +92,7 @@ const Blog = () => {
       </div>
     <Footer/>
     </div>
-  ):<div>Loading...</div>
+  ):<Loader/>
 }
 
 export default Blog
