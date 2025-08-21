@@ -39,11 +39,11 @@ const AddBlog = () => {
             </label>
             <p className='mt-4'>Blog title</p>
             <input type="text" placeholder="Type here" required className='w-full
-            max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded'onChnage={e=>
+            max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded'onChange={e=>
             setTitle(e.target.value)} value={title}/>
             <p className='mt-4'>Sub title</p>
             <input type="text" placeholder="Type here" required className='w-full
-            max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded'onChnage={e=>
+            max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded'onChange={e=>
             setSubTitle(e.target.value)} value={subTitle}/>
             <p className='mt-4'>Blog Description</p>
             <div className='max-w-lg h-74 pb-16 sm:pb-10 pt-2 relative'>
@@ -62,10 +62,13 @@ const AddBlog = () => {
 
                 })}
             </select>
-            <div>
+            <div className='flex items-center space-x-2 mt-4'>
                 <p>Publish Now</p>
-                <input type='checkbox' name='' id=''/>
+                <input type='checkbox'  checked={isPublished} className='scale-125
+                cursor-pointer' onChange={e=>setIsPublished(e.target.checked)}/>
             </div>
+            <button type="submit" className='mt-8 w-40 h-10 bg-primary text-white
+            rounded cursor-pointer text-sm'>Add Blog</button>
         </div>
 
     </form>
