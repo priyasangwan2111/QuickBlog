@@ -55,7 +55,7 @@ export const getDahboard=async(req,res)=>{
 export const deleteCommentById=async(req,res)=>{
     try{
         const{id}=req.body;
-        await Comment.findByIdandDelete(id);
+        await Comment.findByIdAndDelete(id);
         res.json({success:true,message:"comment deleted successfully"})
 
     }
@@ -66,7 +66,7 @@ export const deleteCommentById=async(req,res)=>{
 export const approveCommentById=async(req,res)=>{
     try{
         const{id}=req.body;
-        await Comment.findByIdandUpdate(id,{isApproved:true});
+        await Comment.findByIdAndUpdate(id,{isApproved:true});
         res.json({success:true,message:"comment approved successfully"})
 
     }
